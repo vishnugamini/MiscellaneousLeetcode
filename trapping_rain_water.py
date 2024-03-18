@@ -20,7 +20,4 @@ class Solution:
                     result += (right_max - height[r])
                 r -= 1
         return result
-
-
-        
-        
+    
