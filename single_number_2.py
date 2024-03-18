@@ -1,12 +1,11 @@
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        dic = {}
+        dict = {}
         for x in nums:
-            if x in dic:
-                dic[x] += 1
+            if x in dict:
+                dict[x] += 1
             else:
-                dic[x] = 1
-        for a,b in dic.items():
+                dict[x] = 1
+        for a,b in dict.items():
             if b == 1:
                 return a
-        
